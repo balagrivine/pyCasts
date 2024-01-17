@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Import required modules"""
 from markupsafe import escape
-from flask import Flask, url_for, request
+from flask import Flask, url_for, request, render_template
 
 app = Flask(__name__)
 
@@ -15,7 +15,7 @@ def username(name, username):
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
-        return login_post()
+        return render_template('app.html')
     else:
         return login_get()
 @app.get('/login')
