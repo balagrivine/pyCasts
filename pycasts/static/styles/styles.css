@@ -15,10 +15,11 @@ input, textarea, select {
 h1, p {
 	text-align: center;
 	margin: 1em, auto;
+	color: #ffffff;
 }
 
 form {
-	width: 60px;
+	width: 60vw;
 	max-width: 500px;
 	min-width: 300px;
 	margin: 0 auto;
@@ -26,6 +27,7 @@ form {
 }
 label {
 	display: block;
+	color: white;
 	margin: 0.5rem 0;
 }
 input, textarea {
@@ -38,8 +40,11 @@ input, textarea, select {
 	margin: 10px 0 0 0;
 	width: 100%
 }
-.terms {
+.inline {
+	width: unset;
 	display: inline;
+	vertical-align: middle;
+	margin: 0 0.5em 0 0;
 }
 input[type="file"] {
 	padding: 1px 2px;
@@ -48,4 +53,7 @@ fieldset {
 	border: 0;
 	padding: 2rem 0;
 	border-bottom: 3px solid #3b3b4f;
+}
+legend {
+	color: #ffffff;
 }
