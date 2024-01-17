@@ -15,36 +15,36 @@
 			<form method="POST" action="_blank">
 				<fieldset>
 					<label for="first_name">
-						<input type="text" placeholder="First Name" id="first_name" value="first_name" required>
+						<input class="details" type="text" placeholder="First Name" id="first_name" required>
 					</label>
 					<label for="last_name">
-						<input type="text" placeholder="Last Name" id="last_name" name="last_name" required>
+						<input class="details" type="text" placeholder="Last Name" id="last_name" name="last_name" required>
 					</label>
 					<label for="email">
-						<input type="email" placeholder="Email" id="email" name="email" required>
+						<input class="details" type="email" placeholder="Email" id="email" name="email" required>
 					</label>
 					<label>
-						<input type="password" placeholder="Password" name="password" id="password" required pattern="[a-z0-5{8, }]">
+						<input class="details" type="password" placeholder="Password" name="password" id="password" required pattern="[a-z0-5{8, }]">
 					</label>
 				</fieldset>
 				<fieldset>
 					<legend>Account type(required)</legend>
 					<label for="personal">
-						<input type="radio" name="account" value="personal" id="personal" checked>Personal account
+						<input class="account" type="radio" name="account" value="personal" id="personal" checked>Personal account
 					</label>
 					<label for="business">
-						<input type="radio" name="account" value="business" id="business">Business account
+						<input class="account" type="radio" name="account" value="business" id="business">Business account
 					</label>
 				</fieldset>
 				<fieldset>
 					<label for="upload">Choose your resume to upload
-						<input type="file" name="upload" id="upload">
+						<input class="resume" type="file" name="upload" id="upload">
 					</label>
 					<label for="age">Enter your age(years)
-						<input type="number" id="age" name="age" min="18" max="120">
+						<input class="age" type="number" id="age" name="age" min="18" max="120">
 					</label>
 					<label for="about-us">How Did You Hear About Us
-						<select id="about-us">
+						<select id="about-us" class="referer">
 							<option value="">
 								Select
 							</option>
@@ -62,15 +62,15 @@
 							</option>
 						</select>
 						<label for="bio">
-							<textarea rows=3 cols=30 name="bio" placeholder="I like coding... " id="bio">
+							<textarea class="bio" rows=3 cols=30 name="bio" placeholder="I like coding... " id="bio">
 
 							</textarea>
 						</label>
 					</label>
 				</fieldset>
 				<fieldset>
-					<label for="terms-and-condition">I accept the terms and conditions
-						<input type="checkbox" name="terms-and-conditions">I accept the terms the terms and conditions
+					<label for="terms-and-condition">
+						<input class="terms" type="checkbox" name="terms-and-conditions">I accept the terms the terms and conditions
 					</label>
 					<label for="submit">
 						<input type="submit" name="Submit" value="Submit" id="Submit">
