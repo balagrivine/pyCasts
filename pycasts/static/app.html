@@ -8,7 +8,7 @@
 	<body>
 		<main>
 			<h1>
-				Action form
+				Registration form
 			</h1>
 			<p>Please fill in the form below</p>
 			<form method="POST" action="_blank">
@@ -20,7 +20,59 @@
 						<input type="text" placeholder="Last Name" id="last_name" name="last_name" required>
 					</label>
 					<label for="email">
-						<input type="email" placeholder="Email" id="email" name="email" required pattern="{\w}[a-zA-Z]{\d}[0-9]@gmail.com">
+						<input type="email" placeholder="Email" id="email" name="email" required>
+					</label>
+					<label>
+						<input type="password" placeholder="Password" name="password" id="password" required pattern="[a-z0-5{8, }]">
+					</label>
+				</fieldset>
+				<fieldset>
+					Account type(required)
+					<label for="personal">
+						<input type="radio" name="account" value="personal" id="personal" checked>
+					</label>
+					<label for="business">
+						<input type="radio" name="account" value="business" id="business">
+					</label>
+				</fieldset>
+				<fieldset>
+					<label for="upload">Choose your resume to upload
+						<input type="file" name="upload" id="upload">
+					</label>
+					<label for="age">Enter your age(years)
+						<input type="number" id="age" name="age" min="18" max="120">
+					</label>
+					<label for="about-us">How Did You Hear About Us
+						<select id="about-us">
+							<option value="">
+								Select
+							</option>
+							<option value="1">
+								freeCodeCamp News
+							</option>
+							<option value="2">
+								freeCodeCamp Youtube Channel
+							</option>
+							<option value="3">
+								freeCodeCamp Forum
+							</option>
+							<option value="4">
+								Other
+							</option>
+						</select>
+						<label for="bio">
+							<textarea rows=30 cols=10 name="bio" placeholder="I like coding... " id="bio">
+
+							</textarea>
+						</label>
+					</label>
+				</fieldset>
+				<fieldset>
+					<label for="terms-and-condition">I accept the terms and conditions
+						<input type="checkbox" name="terms-and-conditions">
+					</label>
+					<label for="submit">
+						<input type="submit" name="Submit" value="Submit" id="Submit">
 					</label>
 				</fieldset>
 			</form>
