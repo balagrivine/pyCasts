@@ -10,7 +10,7 @@ def username(name, username):
     return ("Hello {} {}".format(escape(username), escape(name)))
 
 def login_post():
-    return render_template('app.html')
+    return render_template('survey.html')
 @app.route('/', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
@@ -18,7 +18,7 @@ def login():
     return login_get()
 
 def login_get():
-    return render_template('app.html')
+    return render_template('survey.html')
 
 if __name__ == "__main__":
     app.run(debug=True)
