@@ -1,0 +1,23 @@
+h1, p {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+label {
+	display: block;
+	color: #ffffff;
+}
+
+form {
+	background-color: rgba(27, 27, 50, 0.8);
+	width: 80%;
+	height: 60vh;
+	max-width: 500px;
+	min-width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.inline {
+	display: inline;
+}
